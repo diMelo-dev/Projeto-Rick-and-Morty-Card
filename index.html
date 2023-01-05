@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Generator</title>
+</head>
+<body>
+
+    <div class="models">
+        <div class="card">
+
+            <div data-species="1" class="card-bg"></div>
+
+            <div class="card-content">
+                <div class="card--id"><span>ID</span> --</div>
+
+                <div class="card--img">
+                    <img src="rick.jpeg">
+                </div>
+
+                <div class="card--name">Rick Sanchez</div>
+
+                <div data-species="1" class="card--species">Human</div>
+
+                <div class="card--infos">
+                    <div data-info="status" class="info">
+                        <span>Status</span>
+                        <div data-label="status" class="info-data" id="info-status">Alive</div>
+                    </div>
+                    <div data-info="type" class="info">
+                        <span>Type</span>
+                        <div data-label="type" class="info-data" id="info-type">Human</div>
+                    </div>
+                    <div data-info="location" class="info">
+                        <span>Origin</span>
+                        <div data-label="origin" class="info-data" id="info-origin">Earth</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Search a Rick and Morty character</h1>
+
+        <div class="filter-box">
+
+            <div class="filter-row">
+                <span>Nome: </span>
+                <input type="text" name="name" autocomplete="off">
+            </div>
+
+            <div class="filter-row">
+                <span>Status: </span>
+                <div class="input-field">
+                    <input data-drop="Alive|Dead|Unknown" type="text" name="status">
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span>Species: </span>
+                <div class="input-field">
+                    <input data-drop="" type="text" name="species">
+                    <!--<input data-drop="Human|Alien|Humanoid|unknown|Poopybutthole|Mythological Creature|Animal|Robot|Cronenberg|Disease" type="text" name="species">-->
+                </div> 
+            </div>
+
+        </div>
+
+        <div class="back-menu"><span>< Back to filter menu</span></div>
+
+        <div class="card-container">  
+        </div>
+
+        <div class="warning">Looking through the multiple dimensions...</div>
+
+        <div class="bt reset-bt">Reset</div>
+
+        <div class="bt generate-bt">Generate</div>
+
+    </div>
+
+    <footer>Developed by <a href="https://www.linkedin.com/in/danilo-melo-788337215/">Danilo Melo</a></footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
